@@ -3,4 +3,8 @@ bundler_args: --without development
 rvm:
   - jruby
 
+branches:
+  only:
+    - travis-jruby-sandbox
+
 script: bundle exec rake spec
