@@ -3,6 +3,11 @@ source :rubygems
 gem 'rack'
 gem 'rake'
 
+# Adding just as a build example; unrelated to tdiary-core
+platform :jruby do
+  gem 'curb'
+end
+
 group :development do
   gem 'thin', :platforms => :ruby
   gem 'capistrano'
